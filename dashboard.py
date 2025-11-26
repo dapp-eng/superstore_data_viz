@@ -4,7 +4,8 @@ import plotly.express as px
 
 st.set_page_config(page_title="Superstore Data Visualization", layout="wide")
 st.title("Superstore Data Visualization")
-st.markdown("##### by: Daffa Ahmad Pangreksa - 159 - INT24 - Data Science UNESA")
+st.markdown("##### by: Daffa Ahmad Pangreksa - 159 - INT24\n#### Data Science UNESA")
+st.markdown("<br>", unsafe_allow_html=True)
 
 try:
     orders = pd.read_excel('superstore_order.xlsx')
@@ -158,6 +159,7 @@ try:
 except Exception as e:
 
     st.error(f"Error: {e}")
+
 
 
 
